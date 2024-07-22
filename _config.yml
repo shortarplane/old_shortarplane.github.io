@@ -1,0 +1,17 @@
+title: Arplane's URL Shortener 
+description: URL Shortener Powered by Arplane Corporation
+baseurl: "https://shortarplane.github.io"
+lang: en
+languages:
+  en: "English"
+  th: "ไทย"
+translations:
+  en:
+    loading: "Loading..."
+    invalidId: "Invalid or missing ID."
+    error: "An error occurred. Please try again later."
+  th:
+    loading: "กำลังโหลด..."
+    invalidId: "ID ไม่ถูกต้องหรือขาดหายไป."
+    error: "เกิดข้อผิดพลาด โปรดลองใหม่อีกครั้งในภายหลัง."
+google_apps_script_url: ""
