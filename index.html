@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>{{ site.title }}</h1>
+    <form id="shortener-form">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+        <label for="expiration">Expiration Date:</label>
+        <input type="date" id="expiration" name="expiration" required>
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+            {% for code, language in site.languages %}
+            <option value="{{ code }}">{{ language }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Shorten</button>
+    </form>
+    <p id="short-url"></p>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
